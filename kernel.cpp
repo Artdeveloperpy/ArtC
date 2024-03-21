@@ -251,10 +251,10 @@ extern "C" void kernelMain(void* multiboot_structure, uint32_t magicnumber) {
     delay(500);
     while(1) {
         if(runnotepad == true){nprogram_main();}
-        if(runcall == true){cprogram_main();}
-        if(runpaint == true){pprogram_main();}
-        if(runpang == true){pang_main();}
-        if(runcolor == true){color_seter();}
+        else if(runcall == true){cprogram_main();}
+        else if(runpaint == true){pprogram_main();}
+        else if(runpang == true){pang_main();}
+        else if(runcolor == true){color_seter();}
         else{desktop();}
     }
 }
